@@ -4,6 +4,7 @@ import Presente from "@/components/je-me-presente"
 import Etmoi from "@/components/et-moi"
 import MesExpériences from "@/components/mes-expériences"
 import MesProjets from "@/components/mes-projets"
+import Articles from "@/components/articles-écrits"
 
 export default function Home() {
   return (
@@ -13,9 +14,14 @@ export default function Home() {
         </div>
         <div className=" w-full md:w-1/2 md:mt-[86px]  flex flex-col flex-1 h-auto md:absolute justify-end items-end right-0 md:p-10">
           <Etmoi/>
-          <div className=" mt-20">
+          <div className=" mt-36">
             <MesExpériences/>
+          </div>
+          <div className=" mt-36">
             <MesProjets/>
+          </div>
+          <div className=" mt-36">
+            <Articles/>
           </div>
         </div>
       </main>

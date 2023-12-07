@@ -42,7 +42,8 @@ function Experience(
             <p className=' text-sm leading-7 mt-4'>{description}</p>
             <ul className=' mt-4 grid gap-4 grid-cols-4 w-full'>
                 {stack.map((stacks, index) => (
-                    <li className='w-[150px] text-sm py-1 px-2 gap-4 flex items-center border-solid border-[0.2px] text-[#6E6A85] border-[#95A1F9] bg-[#0c0a1b] rounded-full ' key={index}>{stacks}</li>
+                    <li className='w-[150px] text-sm py-1 px-2 gap-4 flex items-center 
+                    border-solid border-[0.2px] text-[#6E6A85] border-[#95A1F9] bg-[#0c0a1b] rounded-full ' key={index}>{stacks}</li>
                 ))}
             </ul>
         </div>
