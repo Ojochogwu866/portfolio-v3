@@ -2,6 +2,7 @@
 
 import Presente from "@/components/je-me-presente"
 import Etmoi from "@/components/et-moi"
+import MesExpériences from "@/components/mes-expériences"
 
 export default function Home() {
   return (
@@ -9,8 +10,11 @@ export default function Home() {
         <div className=" w-[40%] md:mt-32 flex-1 h-[100vh] fixed">
           <Presente/>
         </div>
-        <div className=" w-1/2 md:mt-[86px]  flex flex-1 h-auto absolute justify-end items-end right-0 p-14">
+        <div className=" w-1/2 md:mt-[86px]  flex flex-col flex-1 h-auto absolute justify-end items-end right-0 p-10">
           <Etmoi/>
+          <div className=" mt-20">
+            <MesExpériences/>
+          </div>
         </div>
       </main>
   )

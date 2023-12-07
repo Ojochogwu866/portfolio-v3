@@ -2,8 +2,11 @@
 
 import { links } from "@/lib/da"
 import Link from "next/link"
+import clsx from "clsx"
+import React, { useState } from 'react'
 
 export default function Presente() {
+        const [activeSection, setActiveSection] = useState("About")
   return (
       <section className=" w-full flex flex-col  ">
           <h1 className=" text-[50px] font-semibold">Ojochogwu Dickson</h1>
@@ -14,7 +17,13 @@ export default function Presente() {
             <ul className=" flex gap-4">
              {links.map(link  => (
               <li key={link.extend}>
-                <Link href={link.extend}>{link.name}</Link>
+                <Link className={clsx("", {
+                    "": activeSection === link.name
+                })} href={link.extend} onClick={() => setActiveSection(link.name)}>{link.name}
+                {link.name === activeSection && (
+                    <span className=""></span>
+                )}
+                </Link>
               </li>
              ))}
             </ul>
