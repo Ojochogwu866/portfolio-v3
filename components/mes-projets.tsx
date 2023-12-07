@@ -2,7 +2,7 @@
 
 import React from 'react'
 
-export default function mesProjets() {
+export default function MesProjets() {
   return (
     <section id='projects'>
       

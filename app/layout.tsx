@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Syne } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Topbar'
+import ActiveSectionContextProvider from "@/context/activity"
 
 const syne = Syne({ subsets: ['latin'] })
 
@@ -18,8 +19,12 @@ export default function RootLayout({
   return (
     <html lang="en" className='!scroll-smooth'>
       <body className={`${syne.className} bg-[#040404]`}>
-        <div className=''><Header/></div>
-        {children}
+        < ActiveSectionContextProvider>
+        <div className=''>
+            <Header/>
+        </div>   
+          {children}
+        </ ActiveSectionContextProvider>
       </body>
     </html>
   )

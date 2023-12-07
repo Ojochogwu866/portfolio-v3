@@ -3,23 +3,28 @@
 import { links } from "@/lib/da"
 import Link from "next/link"
 import clsx from "clsx"
-import React, { useState } from 'react'
+import {  useActiveSectionContext } from "@/context/activity"
+import React from 'react'
 
 export default function Presente() {
-        const [activeSection, setActiveSection] = useState("About")
+       const {activeSection, setActiveSection, setTimeOfLastClick} = useActiveSectionContext()
+
   return (
       <section className=" w-full flex flex-col  ">
           <h1 className=" text-[50px] font-semibold">Ojochogwu Dickson</h1>
           <p className=" font-medium text-base mt-4">FullStack Software Engineer</p>
           <p className=" font-normal text-base mt-2 leading-8">Engineering (FS)  —  Polished, pixel-perfect user experience for modern applications. 
           Crafting Intelligent User Interfaces, and building scalable backend systems</p>
+     
           <nav className=" mt-10">
             <ul className=" flex gap-4">
              {links.map(link  => (
               <li key={link.extend}>
                 <Link className={clsx("", {
                     "": activeSection === link.name
-                })} href={link.extend} onClick={() => setActiveSection(link.name)}>{link.name}
+                })} href={link.extend} onClick={() => {setActiveSection(link.name)
+                setTimeOfLastClick(Date.now())
+                }}>{link.name}
                 {link.name === activeSection && (
                     <span className=""></span>
                 )}
@@ -28,6 +33,7 @@ export default function Presente() {
              ))}
             </ul>
           </nav>
+         
           <div className=" bottom-[0px] flex gap-4 md:mt-24">
             <span className=" w-[300px] border-b border-[#6E6A85]"/>
             <a className="block " href="https://github.com/Ojochogwu866" target="_blank" rel="noreferrer noopener" aria-label="GitHub (opens in a new tab)">

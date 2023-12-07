@@ -1,10 +1,15 @@
 'use client'
 
-import React, { useState } from 'react'
+import { CurrentSection } from '@/lib/hookslaw';
+import React from 'react'
 
-export default function etmoi() {
+
+
+export default function Etmoi() {
+    const { ref } = CurrentSection("About", 0.5);
+
   return (
-    <section id='about' className='relative h-auto scroll-mt-36'>
+    <section ref={ref} id='about' className='relative h-auto scroll-mt-36'>
         <p className=' font-normal text-base leading-7 flex flex-col '>
             Self-taught Software Engineer passionate about building software for Startups and Corporations. 
             I focus on creating accessible and scalable user interfaces, utilizing the right tools. 

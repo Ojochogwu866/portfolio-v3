@@ -3,10 +3,12 @@
 import { experiences } from '@/lib/da'
 import RouteChild from './RouteChild'
 import React from 'react'
+import { CurrentSection } from '@/lib/hookslaw';
 
 export default function MesExpériences() {
+    const { ref } = CurrentSection("Experience", 0.5);
   return (
-    <section id='experience' className=' scroll-mt-36'>
+    <section ref={ref} id='experience' className=' scroll-mt-36'>
       <div className='flex flex-col gap-10'>
         {
             experiences.map((experience, index) => (
