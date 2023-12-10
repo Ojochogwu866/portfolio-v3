@@ -15,7 +15,7 @@ export default function Home() {
         <div className=" w-full md:w-1/2 md:mt-[86px]  flex flex-col flex-1 h-auto md:absolute justify-end items-end right-0 md:p-10">
           <Etmoi/>
           <div className=" mt-36">
-            <MesExpériences/>
+            <MesExpériences/> 
           </div>
           <div className=" mt-36">
             <MesProjets/>

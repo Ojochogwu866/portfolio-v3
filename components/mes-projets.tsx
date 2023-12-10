@@ -37,10 +37,10 @@ function Project(
     <section id='projects' className='flex gap-y-4 '>
         <a href="" className=' flex'>
         <div className=''>
-            <div className=' flex items-center gap-3'>
+            <div className=' flex items-center  gap-1'>
                 <h3 className=' text-lg font-semibold'>{project}</h3>
-                <a href={url} className=' text-xs mx-2'>
-                    <svg width="12" height="12" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a href={url} className=' text-xs mt-1'>
+                    <svg className='' width="9" height="9" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M19.4337 16.7625C19.0601 16.7298 18.7548 16.5723 18.518 16.2901C18.2814 16.0081 18.1775 15.701 18.2066 
                         15.3689L19.0074 6.21536L2.21376 20.3069C1.92033 20.5531 1.5972 20.6608 1.24433 20.6299C0.891491 20.599 0.591927 
                         20.4369 0.345712 20.1435C0.0994969 19.85 -0.00817256 19.5269 0.0226967 19.174C0.0535685 18.8212 0.215717 18.5216 0.509145 

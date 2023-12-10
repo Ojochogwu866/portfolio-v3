@@ -1,9 +1,17 @@
-import React from 'react'
+import React from 'react';
+import { QueryClient, QueryClientProvider } from 'react-query';
+import Articles from '@/lib/articles';
 
-export default function Articles() {
+const queryClient = new QueryClient();
+
+const ArticlesEcrits = ({}) => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <QueryClientProvider client={queryClient}>
+        <Articles/>
+    </QueryClientProvider>
+  );
+};
+
+export default ArticlesEcrits;
+
+
