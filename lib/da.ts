@@ -73,5 +73,23 @@ export const experiences = [
         ],
         description: "Developed and translated design components into precise and responsive web pages. Implemented efficient state management for bulk data uploads, enhancing scalability. Managed Node.js REST API development for real-time data collection from IoT devices."
     },
+    {
+        title: "Frontend Engineer (Intern)",
+        organization:"Vinca",
+        date:"June 2021 — August 2021",
+        stack:[
+            "React", "JavaScript", "CSS (SCSS)", "Styled Components"
+        ],
+        description:"Collaborated  with the UI team to deliver modern web pages for the vinca web app. Built and maintained several components and pages on the vinca hospital website. Developed a Patient/Doctor appointment booking system to ease booking of appointments for specialized services. Also built the interface of the admin component to handle bookings, and messages from users."
+    },
+    {
+        title: "Frontend Engineer (Intern)",
+        organization:"FourthStream",
+        date:"Nov 2020 — May 2021",
+        stack:[
+            "React", "HTML & CSS", "JavaScript", "CSS (SCSS)", "Styled Components"
+        ],
+        description:" Worked alongside the UI and engineering team to develop fully functional web interfaces and components, while ensuring all integrations with the backend are fully operational. Developed fully responsive user interfaces, and functional components accross browsers and devices."
+    },
 ] as const;
 

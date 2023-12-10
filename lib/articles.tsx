@@ -17,7 +17,9 @@ type Publication = {
 };
 
 type Data = {
+  data:{
   publication: Publication;
+  }
 };
 
 
@@ -31,10 +33,10 @@ const fetchData = async () => {
     body: JSON.stringify({
           query: `
         query Publication {
-          publication(host: "blog.developerdao.com") {
+          publication(host: "od.hashnode.dev") {
             isTeam
             title
-            posts(first: 10) {
+            posts(first: 3) {
               edges {
                 node {
                   title
@@ -56,26 +58,42 @@ const fetchData = async () => {
 const Articles = () => {
   const { data, isLoading, isError } = useQuery<Data>('myData', fetchData);
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <div className='flex justify-center items-center'></div>;
   }
   if (isError) {
-    return <div>Error fetching data</div>;
+    return <div>Error fetching blog posts</div>;
   }
 
-  const getRandomPost = () => {
-    const { posts } = data?.publication || { posts: { edges: [] } };
-    const randomIndex = Math.floor(Math.random() * posts.edges.length);
-    return posts.edges[randomIndex]?.node;
-  };
+const getRandomPost = () => {
+  const publication = data?.data.publication;  
+  if (!publication) {
+    console.error('Publication data is missing.');
+    return null;
+  }
 
-  const randomPost = getRandomPost();
+  const { posts } = publication;
+  
+  if (!posts || !posts.edges || posts.edges.length === 0) {
+    console.error('Posts data is missing or empty.');
+    return null;
+  }
+  const randomIndex = Math.floor(Math.random() * posts.edges.length);
+  if (randomIndex < 0 || randomIndex >= posts.edges.length) {
+    console.error('Invalid random index:', randomIndex);
+    return null;
+  }
+
+  return posts.edges[randomIndex]?.node;
+};
+
+const randomPost = getRandomPost();
   return (
-    <div className='flex'>
+    <div className='flex flex-col'>
       {randomPost && (
         <>
-          <h1>{randomPost.title}</h1>
-          <p>{randomPost.brief}</p>
-          <a href={randomPost.url} target="_blank" rel="noopener noreferrer">
+          <h1 className=' text-base font-semibold'>{randomPost.title}</h1>
+          <p className=' mt-4 text-sm leading-7'>{randomPost.brief}</p>
+          <a className=' mt-4 text-sm' href={randomPost.url} target="_blank" rel="noopener noreferrer">
             Read more
           </a>
         </>

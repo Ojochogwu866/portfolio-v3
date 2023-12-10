@@ -5,6 +5,7 @@ import Etmoi from "@/components/et-moi"
 import MesExpériences from "@/components/mes-expériences"
 import MesProjets from "@/components/mes-projets"
 import Articles from "@/components/articles-écrits"
+import Footer from "@/components/Footer"
 
 export default function Home() {
   return (
@@ -20,8 +21,11 @@ export default function Home() {
           <div className=" mt-36">
             <MesProjets/>
           </div>
-          <div className=" mt-36">
+          <div className=" mt-28 md:pr-[40px]">
             <Articles/>
+          </div>
+          <div className=" mt-28 md:pr-[40px]">
+            <Footer/>
           </div>
         </div>
       </main>

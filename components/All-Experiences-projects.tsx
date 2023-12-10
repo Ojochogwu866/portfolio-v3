@@ -1,45 +1,23 @@
 'use client'
 
-import { projects } from '@/lib/da'
-import RouteChild from './RouteChild'
+import { experiences } from '@/lib/da'
 import React from 'react'
 import { CurrentSection } from '@/lib/hookslaw';
 
-export default function MesExpériences() {
-    const { ref } = CurrentSection("Projects", 0.5);
+export default function  AllExperiencesProjects() {
+    const { ref } = CurrentSection("Experience", 0.5);
   return (
-    <section ref={ref} id='project' className=' scroll-mt-36'>
-      <div className='flex flex-col gap-10'>
+    <section ref={ref} id='experience' className=' pt-36 pb-20 mt-10 w-full scroll-mt-36'>
+      <div className='flex flex-col gap-y-10'>
         {
-           projects.map((project, index) => (
+            experiences.map((experience, index) => (
                 <React.Fragment key={index}>
-                    <Project {...project} />
+                    <Experience {...experience} />
                 </React.Fragment>
             ))}
-      </div>
-      <div className=' mt-10'>
-        <RouteChild url='/experience'>View All Projects <span/>→</RouteChild>
-      </div>
-    </section>
-  )
-}
-
-type ProjectProps = (typeof projects)[number];
-
-function Project(
-   {
-    project,
-    url,
-    stack,
-    description
-} : ProjectProps) {
-    return (
-    <section id='projects' className='flex gap-y-4 '>
-        <a href="" className=' flex'>
-        <div className=''>
-            <div className=' flex items-center  gap-1'>
-                <h3 className=' text-lg font-semibold'>{project}</h3>
-                <div>
+        <div className=' text-sm text-gray-200 font-semibold gap-2 flex items-center '>
+            Download Resume above for detailed reference of roles, skills applied and achievements
+             <div>
                     <svg className='' width="9" height="9" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M19.4337 16.7625C19.0601 16.7298 18.7548 16.5723 18.518 16.2901C18.2814 16.0081 18.1775 15.701 18.2066 
                         15.3689L19.0074 6.21536L2.21376 20.3069C1.92033 20.5531 1.5972 20.6608 1.24433 20.6299C0.891491 20.599 0.591927 
@@ -50,17 +28,40 @@ function Project(
                         21.8376 2.55198 21.8872 2.70267C21.9368 2.85338 21.9525 3.03256 21.9344 3.24002L20.8558 15.5692C20.823 15.9429 20.6712 
                         16.2433 20.4004 16.4706C20.1295 16.6979 19.8073 16.7952 19.4337 16.7625Z" fill="currentColor"/>
                     </svg></div>
-            </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+type ExperienceProps = (typeof experiences)[number];
+function Experience(
+   {
+    title,
+    organization,
+    date,
+    stack,
+    description
+} : ExperienceProps) {
+    return (
+    <section className='flex gap-y-4 text-[#6E6A85] '>
+        <a href="" className=' flex gap-8'>
+        <div className='md:w-9/12 flex flex-col'>
+            <h3 className=' text-lg font-semibold'>{organization}</h3>
+            <p className='text-base font-normal mt-2'>{title}</p>
             <p className=' text-sm leading-7 mt-4'>{description}</p>
-            <ul className=' mt-4 grid gap-4 grid-cols-4 w-full'>
+            <ul className=' mt-4 flex gap-2 w-full'>
                 {stack.map((stacks, index) => (
-                    <li className='w-[150px] text-sm py-1 px-2 gap-4 flex items-center border-solid border-[0.2px] text-[#6E6A85] border-[#95A1F9] bg-[#0c0a1b] rounded-full ' key={index}>{stacks}</li>
+                    <li className=' text-xs gap-4 flex items-center text-[#6E6A85] ' key={index}>{stacks}</li>
                 ))}
             </ul>
-        
+              </div>
+             <div className=''>
+            <p className=' text-xs'>{date}</p>
         </div>
-            <div className=' w-full'></div>
         </a>
+    
     </section>
     )
 }
+
