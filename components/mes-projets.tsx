@@ -1,7 +1,6 @@
 'use client'
 
 import { projects } from '@/lib/da'
-import RouteChild from './RouteChild'
 import React from 'react'
 import { CurrentSection } from '@/lib/hookslaw';
 
@@ -9,6 +8,7 @@ export default function MesExpériences() {
     const { ref } = CurrentSection("Projects", 0.5);
   return (
     <section ref={ref} id='project' className=' scroll-mt-36'>
+        <h2 className=' text-base font-semibold pb-2 md:hidden'>Work</h2>
       <div className='flex flex-col gap-10'>
         {
            projects.map((project, index) => (
@@ -18,7 +18,11 @@ export default function MesExpériences() {
             ))}
       </div>
       <div className=' mt-10'>
-        <RouteChild url='/experience'>View All Projects <span/>→</RouteChild>
+                    <a  className="flex text-sm gap-2
+                    " href="https://github.com/Ojochogwu866" 
+                    target="_blank" rel="noreferrer noopener" 
+                    aria-label="GitHub (opens in a new tab)">
+                    <div className=''>View all my projects</div>→</a>
       </div>
     </section>
   )

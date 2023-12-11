@@ -9,6 +9,7 @@ export default function MesExpériences() {
 
   return (
     <section ref={ref} id='experience' className=' scroll-mt-36'>
+        <h2 className=' text-base font-semibold pb-2 md:hidden'>Experiences</h2>
       <div className='flex flex-col gap-10'>
         {top3Experiences.map((experience, index) => (
           <React.Fragment key={index}>

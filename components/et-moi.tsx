@@ -10,7 +10,8 @@ export default function Etmoi() {
 
   return (
     <section ref={ref} id='about' className='relative h-auto scroll-mt-36'>
-        <p className=' font-normal text-base leading-7 flex flex-col '>
+      <h2 className=' text-base font-semibold pb-2 md:hidden'>About</h2>
+        <p className=' font-normal md:text-base text-sm leading-7 flex flex-col '>
             Self-taught Software Engineer passionate about building software for Startups and Corporations. 
             I focus on creating accessible and scalable user interfaces, utilizing the right tools. 
             In recent years, I have honed my skills with the necessary tools, enhancing both my design and engineering acumen.
@@ -21,7 +22,9 @@ export default function Etmoi() {
             <br/>
             <br className='mt-3'/>
             <div className=''>I have built a couple of stuffs, accessible on my github, but notably you can check out <span/>
-                <a href='' className=''>You Read</a>, <a href='' className=''>Fiction Factory</a> and currently, I am working on <a className='' href=''>Redux</a>, an open-source documentation library to help 
+                <a href='https://you-read.vercel.app' target='_blank' rel="noreferrer noopener" 
+                    aria-label="You-Read (opens in a new tab)" className='text-gray-200 font-normal'>You Read</a>, <a  href='https://fiction-factory.com' target='_blank' rel="noreferrer noopener" 
+                    aria-label="Fiction-factory (opens in a new tab)" className='text-gray-200 font-normal'>Fiction Factory</a> and currently, I am working on <a className='text-gray-200 font-normal' href=''>Redux</a>, an open-source documentation library to help 
                 documentation teams, and developers measure the performance of their documentations, and make improvements.
             </div>
       </p>

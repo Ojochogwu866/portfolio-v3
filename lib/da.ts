@@ -22,7 +22,7 @@ export const projects = [
     {
         project: 'You Read',
         description: 'Book Reading app for keeping tabs of your reading adventures, documenting your reading experience, like book genre covered in a period of time, total number of pages read, and getting access to latest books and best selling, by fetching  the boks data from New York Times API.',
-        url:'',
+        url:'you-read.vercel.app',
         stack: [
            "Vue Js", "Express Js", "Vercel", "OnRender"
         ]
@@ -30,7 +30,7 @@ export const projects = [
     {
         project: 'Fiction Factory',
         description: 'Hiring platform for fiction writters. Hire vetted plot writters to do your story telling, buy manuscripts and get your worsk published at very low cost. Also, you get paid to do your writting Job',
-        url:'',
+        url:'fictionfactory.com',
         stack: [
            "Vue Js", "GoLang", "Vercel", "OnRender", "Docker"
         ]
@@ -38,7 +38,7 @@ export const projects = [
     {
         project: 'ReDux',
         description: ' Work In Progress',
-        url:'',
+        url:'redux.verce.app',
         stack: [
            "React Js", "Python", "Vercel", "OnRender", "Docker"
         ]
