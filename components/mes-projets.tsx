@@ -9,7 +9,7 @@ import { fadeIn } from '@/lib/motion';
 export default function MesExpériences() {
     const { ref } = CurrentSection("Projects", 0.5);
   return (
-    <section ref={ref} id='project' className=' scroll-mt-36'>
+    <section ref={ref} id='project' className=' scroll-mt-36  md:px-[40px] '>
         <h2 className=' text-base font-semibold pb-2 md:hidden'>Work</h2>
       <div className='flex flex-col gap-10'>
         {
@@ -45,7 +45,7 @@ function Project(
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}id='projects' 
-      className='flex gap-y-4 '>
+      className='flex gap-y-4 w-full'>
         <a href="" className=' flex'>
         <div className=''>
             <div className=' flex items-center  gap-1'>
@@ -63,14 +63,17 @@ function Project(
                     </svg></div>
             </div>
             <p className=' text-sm leading-7 mt-4'>{description}</p>
-            <ul className=' mt-4 grid gap-4 grid-cols-4 w-full'>
-                {stack.map((stacks, index) => (
-                    <li className='w-[150px] text-sm py-1 px-2 gap-4 flex items-center border-solid border-[0.2px] text-[#6E6A85] border-[#95A1F9] bg-[#0c0a1b] rounded-full ' key={index}>{stacks}</li>
-                ))}
-            </ul>
-        
+              <ul className=' mt-4 flex flex-wrap w-full gap-2'>
+            {stack.map((stacks, index) => (
+              <li
+                className='w-fit text-[13px] py-1 px-2 gap-4 flex items-center border-solid border-[0.2px] text-[#6E6A85] border-[#95A1F9] bg-[#0c0a1b] rounded-full '
+                key={index}
+              >
+                {stacks}
+              </li>
+            ))}
+          </ul>
         </div>
-            <div className=' w-full'></div>
         </a>
     </motion.section>
     )

@@ -37,7 +37,7 @@ export const projects = [
     },
     {
         project: 'ReDux',
-        description: ' Work In Progress',
+        description: ' Work In Progress: Open source software for dicumentation teams and developer expereince teams to measure the performance of their documentations and gain quality insight on how to improve',
         url:'redux.verce.app',
         stack: [
            "React Js", "Python", "Vercel", "OnRender", "Docker"

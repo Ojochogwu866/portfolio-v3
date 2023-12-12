@@ -5,7 +5,7 @@ import { footerVariants } from '@/lib/motion';
 
 export default function Footer() {
   return (
-    <section className='pb-10 w-full flex'>
+    <section className='pb-10 w-full flex  md:px-[40px] '>
     <motion.div
     variants={footerVariants}
     initial="hidden"

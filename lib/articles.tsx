@@ -88,7 +88,7 @@ const getRandomPost = () => {
 
 const randomPost = getRandomPost();
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col  md:px-[40px] '>
       {randomPost && (
         <>
           <h1 className=' text-base font-semibold'>{randomPost.title}</h1>

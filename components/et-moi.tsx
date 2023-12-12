@@ -9,7 +9,7 @@ export default function Etmoi() {
     const { ref } = CurrentSection("About", 0.5);
 
   return (
-    <section ref={ref} id='about' className=' flex w-full justify-center items-center  scroll-mt-36'>
+    <section ref={ref} id='about' className=' flex w-full justify-center items-center md:px-[40px] scroll-mt-36'>
       <div className=''>
       <h2 className=' text-base font-semibold pb-2 md:hidden'>About</h2>
         <p className=' font-normal text-sm leading-7 flex flex-col '>

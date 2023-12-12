@@ -10,15 +10,15 @@ import Footer from "@/components/Footer"
 export default function Home() {
   return (
       <main className="flex  flex-col h-auto md:h-screen w-full px-[20px] md:px-[80px] text-[#6E6A85] gap-10">
-        <div className=" w-full md:w-[40%] md:mt-32 mt-20 md:flex-1 h-screen md:fixed">
+        <div className=" w-full md:w-[40%] md:mt-32 mt-20 md:flex-1 h-screen md:fixed flex justify-center items-center md:justify-start md:items-start">
           <Presente/>
         </div>
-        <div className=" w-full md:w-1/2 md:mt-[86px]  flex flex-col md:flex-1 h-auto md:absolute justify-end items-end right-0 md:p-5">
+        <div className=" w-full md:w-1/2 md:mt-[86px]  flex flex-col md:flex-1 h-auto md:absolute  right-0 md:p-10">
           <Etmoi/>
           <div className=" md:mt-36 mt-10">
             <MesExpériences/> 
           </div>
-          <div className=" md:mt-36 mt-10">
+          <div className=" md:mt-36 mt-10 ">
             <MesProjets/>
           </div>
           <div className=" mt-10 md:mt-24 md:pr-[40px]">
