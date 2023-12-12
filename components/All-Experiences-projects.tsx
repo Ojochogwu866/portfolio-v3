@@ -45,22 +45,30 @@ function Experience(
 } : ExperienceProps) {
     return (
     <section className='flex gap-y-4 text-[#6E6A85] '>
-        <a href="" className=' flex gap-8'>
-        <div className='md:w-9/12 flex flex-col'>
-            <h3 className=' text-lg font-semibold'>{organization}</h3>
-            <p className='text-base font-normal mt-2'>{title}</p>
-            <p className=' text-sm leading-7 mt-4'>{description}</p>
-            <ul className=' mt-4 flex gap-2 w-full'>
-                {stack.map((stacks, index) => (
-                    <li className=' text-xs gap-4 flex items-center text-[#6E6A85] ' key={index}>{stacks}</li>
-                ))}
-            </ul>
-              </div>
-             <div className=''>
+        <div className=' flex gap-8'>
+            <div className='w-full'>
+          <div className='w-full flex justify-between items-center'>
+            <div className=''>
+              <h3 className=' text-lg font-semibold'>{organization}</h3>
+              <p className='text-base font-normal mt-2'>{title}</p>
+            </div>
+           <div className=' '>
             <p className=' text-xs'>{date}</p>
+          </div>
+          </div>
+          <p className=' text-sm leading-7 mt-4'>{description}</p>
+          <ul className=' mt-4 flex flex-wrap w-full gap-2'>
+            {stack.map((stacks, index) => (
+              <li
+                className='w-fit text-[13px] py-1 px-2 gap-4 flex items-center  text-[#6E6A85]   rounded-full '
+                key={index}
+              >
+                {stacks}
+              </li>
+            ))}
+          </ul>
         </div>
-        </a>
-    
+        </div>
     </section>
     )
 }

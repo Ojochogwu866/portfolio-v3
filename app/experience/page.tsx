@@ -4,7 +4,7 @@ import AllExperiencesprojects from "@/components/All-Experiences-projects"
 
 export default function Home() {
   return (
-      <main className=" px-[40px] md:px-[80px] mx-auto w-full">
+      <main className=" px-[20px] md:px-[80px] mx-auto md:w-9/12">
         <AllExperiencesprojects/>
       </main>
   )
