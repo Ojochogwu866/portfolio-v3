@@ -2,7 +2,7 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import { resolve } from 'path';
 
-export  async function GET(req: NextApiRequest, res: NextApiResponse) {
+const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   try {
     const pdfFilePath = resolve(process.cwd(), '/ojochogwudickson.pdf', 'ojochogwudickson.pdf');
     res.status(200).send(pdfFilePath);
