@@ -10,7 +10,7 @@ import Footer from "@/components/Footer"
 export default function Home() {
   return (
       <main className="flex  flex-col h-auto md:h-screen w-full px-[20px] md:px-[80px] text-[#6E6A85] gap-10">
-        <div className=" w-full md:w-[40%] md:mt-32 mt-20 md:flex-1 h-[100vh] md:fixed">
+        <div className=" w-full md:w-[40%] md:mt-32 mt-20 md:flex-1 h-screen md:fixed">
           <Presente/>
         </div>
         <div className=" w-full md:w-1/2 md:mt-[86px]  flex flex-col md:flex-1 h-auto md:absolute justify-end items-end right-0 md:p-5">

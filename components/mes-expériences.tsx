@@ -45,10 +45,17 @@ function Experience({
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
       className='flex gap-y-4 '>
-      <a href='' className=' flex'>
-        <div className=''>
-          <h3 className=' text-lg font-semibold'>{organization}</h3>
-          <p className='text-base font-normal mt-2'>{title}</p>
+      <a href='' className=' flex w-full' >
+        <div className='w-full'>
+          <div className='w-full flex justify-between items-center'>
+            <div className=''>
+              <h3 className=' text-lg font-semibold'>{organization}</h3>
+              <p className='text-base font-normal mt-2'>{title}</p>
+            </div>
+           <div className=' '>
+            <p className=' text-xs'>{date}</p>
+          </div>
+          </div>
           <p className=' text-sm leading-7 mt-4'>{description}</p>
           <ul className=' mt-4 grid gap-4 grid-cols-4 w-full'>
             {stack.map((stacks, index) => (
@@ -61,9 +68,6 @@ function Experience({
               </li>
             ))}
           </ul>
-        </div>
-        <div className=' w-full'>
-          <p className=' text-xs'>{date}</p>
         </div>
       </a>
     </motion.section>
