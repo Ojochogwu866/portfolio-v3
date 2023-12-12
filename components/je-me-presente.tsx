@@ -6,6 +6,7 @@ import clsx from "clsx"
 import {  useActiveSectionContext } from "@/context/activity"
 import styles from "@/styles/styles"
 
+
 export default function Presente() {
        const {activeSection, setActiveSection, setTimeOfLastClick} = useActiveSectionContext()
 
@@ -36,7 +37,7 @@ export default function Presente() {
          
           <div className=" bottom-[0px] flex gap-4 md:mt-16 mt-10">
             <span className=" w-[300px] border-b border-[#6E6A85] "/>
-            <a className={`${styles.socials}`} href="https://x.com/Ojochogwu_d" 
+            <a className={`${styles.links}`} href="https://x.com/Ojochogwu_d" 
             target="_blank" rel="noreferrer noopener" aria-label="Twitter (opens in a new tab)">
             <svg width="14" height="14" className="hover:fill-slate-200" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M20 2.81605C19.2642 3.13762 18.4733 3.3542 17.6433 3.45182C18.4908 2.95223 19.1417 
@@ -48,7 +49,7 @@ export default function Presente() {
               4.33697 19.45 3.62573 20 2.81605Z" fill="#6E6A85"/>
             </svg>X
             </a>
-            <a  className={`${styles.socials}`} href="https://www.linkedin.com/in/ojochogwu-d-0838a312b/" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn (opens in a new tab)">
+            <a  className={`${styles.links}`} href="https://www.linkedin.com/in/ojochogwu-d-0838a312b/" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn (opens in a new tab)">
             <svg width="14" height="14" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M19.0002 2.92188H5C3 2.92188 2 3.92188 2 5.92188L2.00059 19.9219C2.00059 21.9219 3.00021 
               22.9219 5.00021 22.9219H19.0002C21.0002 22.9219 22.0002 21.9219 22.0002 19.9219V5.92188C22.0002 3.92188 21.0002 2.92188 
@@ -59,7 +60,7 @@ export default function Presente() {
             </svg>LI
             </a>
 
-            <a  className={`${styles.socials}`} href="" target="_blank" rel="noreferrer noopener" aria-label="Spotify (opens in a new tab)">
+            <a  className={`${styles.links}`} href="" target="_blank" rel="noreferrer noopener" aria-label="Spotify (opens in a new tab)">
             <svg width="14" height="14" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 0.44873C5.3835 0.44873 0 5.83223 0 12.4487C0 19.0652 5.3835 24.4487 12 24.4487C18.6165 
               24.4487 24 19.0652 24 12.4487C24 5.83223 18.6165 0.44873 12 0.44873ZM17.505 17.7707C17.358 17.9792 
@@ -74,7 +75,7 @@ export default function Presente() {
               20.448 10.9142Z" fill="#6E6A85"/>
             </svg>   SP
             </a>
-            <a  className={`${styles.socials}`} href="https://github.com/Ojochogwu866" target="_blank" rel="noreferrer noopener" aria-label="Github (opens in a new tab)">
+            <a  className={`${styles.links}`} href="https://github.com/Ojochogwu866" target="_blank" rel="noreferrer noopener" aria-label="Github (opens in a new tab)">
             <svg xmlns="http://www.w3.org/2000/svg" 
               viewBox="0 0 16 16" fill="currentColor" 
               className="h-[14px] w-[14px]" aria-hidden="true">

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "child_process": "^1.0.2",
     "clsx": "^2.0.0",
     "dotenv": "^16.3.1",
     "framer-motion": "^10.16.16",
@@ -16,7 +17,8 @@
     "react": "^18",
     "react-dom": "^18",
     "react-intersection-observer": "^9.5.3",
-    "react-query": "^3.39.3"
+    "react-query": "^3.39.3",
+    "util": "^0.12.5"
   },
   "devDependencies": {
     "@types/node": "^20",
