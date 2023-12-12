@@ -3,6 +3,8 @@
 import { projects } from '@/lib/da'
 import React from 'react'
 import { CurrentSection } from '@/lib/hookslaw';
+import { motion } from 'framer-motion';
+import { fadeIn } from '@/lib/motion';
 
 export default function MesExpériences() {
     const { ref } = CurrentSection("Projects", 0.5);
@@ -38,7 +40,12 @@ function Project(
     description
 } : ProjectProps) {
     return (
-    <section id='projects' className='flex gap-y-4 '>
+    <motion.section
+      variants={fadeIn("up", "expereinces", 0.2, 0.2)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}id='projects' 
+      className='flex gap-y-4 '>
         <a href="" className=' flex'>
         <div className=''>
             <div className=' flex items-center  gap-1'>
@@ -65,6 +72,6 @@ function Project(
         </div>
             <div className=' w-full'></div>
         </a>
-    </section>
+    </motion.section>
     )
 }

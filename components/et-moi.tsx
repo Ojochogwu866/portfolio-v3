@@ -9,9 +9,9 @@ export default function Etmoi() {
     const { ref } = CurrentSection("About", 0.5);
 
   return (
-    <section ref={ref} id='about' className='relative h-auto scroll-mt-36'>
+    <section ref={ref} id='about' className='relative  scroll-mt-36'>
       <h2 className=' text-base font-semibold pb-2 md:hidden'>About</h2>
-        <p className=' font-normal md:text-base text-sm leading-7 flex flex-col '>
+        <p className=' font-normal text-sm leading-7 flex flex-col '>
             Self-taught Software Engineer passionate about building software for Startups and Corporations. 
             I focus on creating accessible and scalable user interfaces, utilizing the right tools. 
             In recent years, I have honed my skills with the necessary tools, enhancing both my design and engineering acumen.

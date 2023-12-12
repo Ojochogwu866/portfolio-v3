@@ -2,6 +2,8 @@ import { experiences } from '@/lib/da';
 import RouteChild from './RouteChild';
 import React from 'react';
 import { CurrentSection } from '@/lib/hookslaw';
+import { fadeIn } from '@/lib/motion';
+import { motion } from 'framer-motion';
 
 export default function MesExpériences() {
   const { ref } = CurrentSection('Experience', 0.5);
@@ -10,7 +12,8 @@ export default function MesExpériences() {
   return (
     <section ref={ref} id='experience' className=' scroll-mt-36'>
         <h2 className=' text-base font-semibold pb-2 md:hidden'>Experiences</h2>
-      <div className='flex flex-col gap-10'>
+      <div 
+      className='flex flex-col gap-10'>
         {top3Experiences.map((experience, index) => (
           <React.Fragment key={index}>
             <Experience {...experience} />
@@ -36,7 +39,12 @@ function Experience({
   description,
 }: ExperienceProps) {
   return (
-    <section className='flex gap-y-4 '>
+    <motion.section
+      variants={fadeIn("up", "expereinces", 0.2, 0.2)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
+      className='flex gap-y-4 '>
       <a href='' className=' flex'>
         <div className=''>
           <h3 className=' text-lg font-semibold'>{organization}</h3>
@@ -58,6 +66,6 @@ function Experience({
           <p className=' text-xs'>{date}</p>
         </div>
       </a>
-    </section>
+    </motion.section>
   );
 }

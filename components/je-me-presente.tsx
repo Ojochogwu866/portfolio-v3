@@ -4,7 +4,7 @@ import { links } from "@/lib/da"
 import Link from "next/link"
 import clsx from "clsx"
 import {  useActiveSectionContext } from "@/context/activity"
-import React from 'react'
+import styles from "@/styles/styles"
 
 export default function Presente() {
        const {activeSection, setActiveSection, setTimeOfLastClick} = useActiveSectionContext()
@@ -34,10 +34,11 @@ export default function Presente() {
             </ul>
           </nav>
          
-          <div className=" bottom-[0px] flex gap-4 md:mt-24 mt-10">
-            <span className=" w-[300px] border-b border-[#6E6A85]"/>
-            <a className="block " href="https://x.com/Ojochogwu_d" target="_blank" rel="noreferrer noopener" aria-label="Twitter (opens in a new tab)">
-            <svg width="24" height="24" className="hover:fill-slate-200" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div className=" bottom-[0px] flex gap-4 md:mt-16 mt-10">
+            <span className=" w-[300px] border-b border-[#6E6A85] "/>
+            <a className={`${styles.socials}`} href="https://x.com/Ojochogwu_d" 
+            target="_blank" rel="noreferrer noopener" aria-label="Twitter (opens in a new tab)">
+            <svg width="14" height="14" className="hover:fill-slate-200" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M20 2.81605C19.2642 3.13762 18.4733 3.3542 17.6433 3.45182C18.4908 2.95223 19.1417 
               2.1606 19.4475 1.2172C18.655 1.67988 17.7767 2.01621 16.8417 2.19752C16.0942 1.41245 15.0267 0.921875 13.8467 
               0.921875C11.1975 0.921875 9.2508 3.35501 9.8492 5.88085C6.44 5.71268 3.41667 4.10482 1.3925 1.66101C0.3175 3.47643 
@@ -45,21 +46,21 @@ export default function Presente() {
               10.5601C3.5175 10.7144 2.885 10.7504 2.24167 10.629C2.76333 12.2336 4.27833 13.401 6.075 13.4338C4.35 14.7652 
               2.17667 15.36 0 15.1073C1.81583 16.2533 3.97333 16.9219 6.29 16.9219C13.9083 16.9219 18.2125 10.588 17.9525 4.9071C18.7542 
               4.33697 19.45 3.62573 20 2.81605Z" fill="#6E6A85"/>
-            </svg>
+            </svg>X
             </a>
-            <a className="block " href="https://www.linkedin.com/in/ojochogwu-d-0838a312b/" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn (opens in a new tab)">
-            <svg width="24" height="24" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a  className={`${styles.socials}`} href="https://www.linkedin.com/in/ojochogwu-d-0838a312b/" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn (opens in a new tab)">
+            <svg width="14" height="14" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M19.0002 2.92188H5C3 2.92188 2 3.92188 2 5.92188L2.00059 19.9219C2.00059 21.9219 3.00021 
               22.9219 5.00021 22.9219H19.0002C21.0002 22.9219 22.0002 21.9219 22.0002 19.9219V5.92188C22.0002 3.92188 21.0002 2.92188 
               19.0002 2.92188ZM8.66687 18.7553H6.16687V9.58854H8.66687V18.7553ZM7.41687 8.53187C6.61187 8.53187 5.95854 7.87355 
               5.95854 7.06188C5.95854 6.25021 6.61187 5.59187 7.41687 5.59187C8.22187 5.59187 8.87521 6.25021 8.87521 7.06188C8.87521 
               7.87355 8.22271 8.53187 7.41687 8.53187ZM18.6669 18.7553H16.1669V14.0853C16.1669 11.2786 12.8335 11.4911 12.8335 
               14.0853V18.7553H10.3335V9.58854H12.8335V11.0594C13.9969 8.90438 18.6669 8.74521 18.6669 13.1228V18.7553Z" fill="#6E6A85"/>
-            </svg>
+            </svg>LI
             </a>
 
-            <a className="block " href="" target="_blank" rel="noreferrer noopener" aria-label="Spotify (opens in a new tab)">
-            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a  className={`${styles.socials}`} href="" target="_blank" rel="noreferrer noopener" aria-label="Spotify (opens in a new tab)">
+            <svg width="14" height="14" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 0.44873C5.3835 0.44873 0 5.83223 0 12.4487C0 19.0652 5.3835 24.4487 12 24.4487C18.6165 
               24.4487 24 19.0652 24 12.4487C24 5.83223 18.6165 0.44873 12 0.44873ZM17.505 17.7707C17.358 17.9792 
               17.127 18.0902 16.8915 18.0902C16.7415 18.0902 16.5915 18.0467 16.461 17.9537C13.6485 15.9767 8.97 
@@ -71,14 +72,14 @@ export default function Presente() {
               11.2427 19.5345 11.2007 19.4055 11.1137C15.27 8.30723 8.9835 8.29373 4.914 9.73373C4.524 9.86873 4.095 9.66623 3.957 
               9.27473C3.819 8.88473 4.023 8.45573 4.4145 8.31773C8.841 6.75323 15.7005 6.78623 20.25 9.87173C20.592 10.1042 20.679 10.5707 
               20.448 10.9142Z" fill="#6E6A85"/>
-            </svg>   
+            </svg>   SP
             </a>
-            <a className="block " href="https://github.com/Ojochogwu866" target="_blank" rel="noreferrer noopener" aria-label="Github (opens in a new tab)">
+            <a  className={`${styles.socials}`} href="https://github.com/Ojochogwu866" target="_blank" rel="noreferrer noopener" aria-label="Github (opens in a new tab)">
             <svg xmlns="http://www.w3.org/2000/svg" 
               viewBox="0 0 16 16" fill="currentColor" 
-              className="h-6 w-6" aria-hidden="true">
+              className="h-[14px] w-[14px]" aria-hidden="true">
                 <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
-            </svg> 
+            </svg> GH
             </a>
           </div>
       </section>
