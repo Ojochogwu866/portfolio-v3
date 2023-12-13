@@ -1,15 +1,14 @@
+import { readFile } from 'fs/promises';
+import path from 'path';
 
-import { NextApiRequest, NextApiResponse } from 'next';
-import { resolve } from 'path';
+export async function GET() {
+  const buffer = await readFile(path.join(process.cwd(), 'src/app/assets', 'ojochogwudickson.pdf'));
 
-const handler = async (req: NextApiRequest, res: NextApiResponse) => {
-  try {
-    const pdfFilePath = resolve(process.cwd(), '/ojochogwudickson.pdf', 'ojochogwudickson.pdf');
-    res.status(200).send(pdfFilePath);
-  } catch (error) {
-    console.error('Error in API route:', error);
-    res.status(500).json({ error: 'Internal Server Error' });
-  }
+  const headers = new Headers();
+  headers.append('Content-Disposition', 'attachment; filename="ojochogwudickson.pdf"');
+  headers.append('Content-Type', 'application/pdf');
+
+  return new Response(buffer, {
+    headers,
+  });
 }
-
-

@@ -20,9 +20,7 @@ export default function RootLayout({
     <html lang="en" className='!scroll-smooth'>
       <body className={`${syne.className} bg-[#040404]`}>
         < ActiveSectionContextProvider>
-        <div className=''>
-            <Header/>
-        </div>   
+            <Header/> 
           {children}
         </ ActiveSectionContextProvider>
       </body>
