@@ -1,5 +1,4 @@
 import { useQuery } from 'react-query';
-import styles from '@/styles/styles';
 type Post = {
   node: {
     title: string;
