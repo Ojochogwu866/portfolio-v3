@@ -1,3 +1,4 @@
+  ![Logo](/app/assets/logo.png)
 # Ojochogwu Dickson's Website
 
 Github repository for my developer portfolio. Actually 4th iteration of my Portfolio
