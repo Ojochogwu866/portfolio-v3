@@ -89,7 +89,7 @@ export const experiences = [
         stack:[
             "React", "HTML & CSS", "JavaScript", "CSS (SCSS)", "Styled Components"
         ],
-        description:" Worked alongside the UI and engineering team to develop fully functional web interfaces and components, while ensuring all integrations with the backend are fully operational. Developed fully responsive user interfaces, and functional components accross browsers and devices."
+        description:" Worked alongside other members of the engineering team to develop fully functional web interfaces and components, while ensuring all integrations with the backend are fully operational. Developed fully responsive user interfaces, and functional components accross browsers and devices."
     },
 ] as const;
 
