@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: 'An overview of my Projects nad Relevant Experiences in recent years. This list may also consist of works I have in Progress',
 }
 
-export default function RootLayout({
+export default function Layout({
   children,
 }: {
   children: React.ReactNode
