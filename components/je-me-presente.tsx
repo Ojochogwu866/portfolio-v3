@@ -13,7 +13,7 @@ export default function Presente() {
   return (
       <section className=" w-full flex flex-col  ">
           <h1 className=" text-[50px] font-semibold">Ojochogwu Dickson</h1>
-          <p className=" font-medium text-base md:mt-4 mt-10">FullStack Software Engineer</p>
+          <p className=" font-medium text-base md:mt-4 mt-10">FullStack Software Engineer <br/>& Developer Advocate</p>
           <p className=" font-normal text-base md:mt-2 leading-7 mt-8">Engineering (FS)  —  Polished, pixel-perfect user experience for modern applications. 
           Crafting Intelligent User Interfaces, and building scalable backend systems</p>
      
