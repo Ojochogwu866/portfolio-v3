@@ -13,8 +13,7 @@ export default function Etmoi() {
       <div className=''>
       <h2 className=' text-base font-semibold pb-2 md:hidden'>About</h2>
         <p className=' font-normal text-sm leading-7 flex flex-col '>
-            Self-taught Software Engineer passionate about building software for Startups and Corporations. 
-            I focus on creating accessible and scalable user interfaces, utilizing the right tools. 
+            Software Developer building usable products, crafting modern user interfaces and systems that are scalable, by utilizing the right tools. 
             In recent years, I have honed my skills with the necessary tools, enhancing both my design and engineering acumen.
             <br/>
             <br className='mt-3'/>
