@@ -61,9 +61,6 @@ src/
 
 This portfolio is deployed on Vercel. Any push to the `main` branch will trigger an automatic deployment.
 
-## Customization
-
-Feel free to fork this project and customize it for your own portfolio. Update the content in the `data/` directory to reflect your personal information and projects.
 
 ## Contributing
 
@@ -71,7 +68,7 @@ While this is a personal portfolio, I'm open to suggestions and improvements. Fe
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available under the [MIT License](LICENSE.md).
 
 ## Contact
 
