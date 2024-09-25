@@ -72,7 +72,7 @@ This project is open source and available under the [MIT License](LICENSE.md).
 
 ## Contact
 
-- Website: [www.heyojochogwu.dev](https://www.heyojochogwu.dev)
-- Email: contact@heyojochogwu.dev
+- Website: [www.heyojochogwu.xyz](https://www.heyojochogwu.xyz)
+- Email: contact@heyojochogwu.xyz
 - LinkedIn: [Ojochogwu Dickson](https://www.linkedin.com/in/ojochogwu-d-0838a312b/)
 - GitHub: [@ojochogwu](https://github.com/ojochogwu866)
